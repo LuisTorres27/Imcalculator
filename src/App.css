@@ -1,0 +1,38 @@
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+h1,h2{
+    background: linear-gradient(90deg, #42afa1, #78d4a8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.avatar{
+    width: 140px;
+    height: auto;
+}
+
+.flex-col-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 576px) {
+    .container{
+        height: auto;
+    }
+
+    .avatar{
+        width: 100px;
+    }
+
+    .top{
+        margin-top: 20px;
+    }
+}
